@@ -41,6 +41,77 @@ print(index)
 
 
 #6. Display the two substring separated by space.
+s=input("enter the string: ")
+a=s[ :int(len(s)/2)]
+b=s[int(len(s)/2): ]
+print(a," ",b)
+
+
+#8. Reverse the following tuple aTuple = (10, 20, 30, 40, 50)
+aTuple = (10, 20, 30, 40, 50)
+n=aTuple[: :-1]
+print(n)
+
+
+#9.Access value 20 from the following tuple aTuple = ("Orange", [10, 20, 30], (5, 15,25))
+aTuple = ("Orange", [10, 20, 30], (5, 15,25))
+print(aTuple[1][1])
+
+
+
+#10. Unpack the following tuple into 4 variables aTuple = (10, 20, 30, 40)
+aTuple = (10, 20, 30, 40)
+for i in aTuple:
+    print(i)
+    
+    
+#11.Swap the following two tuples tuple1 = (11, 22) tuple2 = (99, 88)
+tuple1 = (11, 22) 
+tuple2 = (99, 88)
+
+temp=tuple1
+tuple1=tuple2
+tuple2=temp
+
+print(tuple1)
+print(tuple2)
+
+
+#12.Copy element 44 and 55 from the following tuple into a new tuple  tuple1 = (11, 22,33, 44, 55, 66)
+tuple1 = (11, 22,33, 44, 55, 66)
+
+t=tuple1[3:5]
+print(t)
+
+
+
+#13.Modify the first item (22) of a list inside a following tuple to 222 tuple1 = (11, [22,33], 44, 55)
+tuple1 = (11, [22,33], 44, 55)
+tuple1[1][0]=222
+print(tuple1)
+
+
+
+#15.Merge following two Python dictionaries into one dict1
+#dict1 = {'Ten': 10, 'Twenty': 20, 'Thirty': 30}
+#dict2 = {'Thirty': 30, 'Fourty': 40, 'Fifty': 50}
+
+
+dict1 = {'Ten': 10, 'Twenty': 20, 'Thirty': 30}
+dict2 = {'Thirty': 30, 'Fourty': 40, 'Fifty': 50}
+
+dict3=dict1.copy()
+dict3.update(dict2)
+
+print(dict3)
+
+
+#16.
+
+
+
+
+
 
 
 
