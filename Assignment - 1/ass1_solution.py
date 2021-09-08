@@ -47,6 +47,11 @@ b=s[int(len(s)/2): ]
 print(a," ",b)
 
 
+#7.Given an input list removes the element at index 4 and add it to the 2nd position and also, at the end of the list.
+
+
+
+
 #8. Reverse the following tuple aTuple = (10, 20, 30, 40, 50)
 aTuple = (10, 20, 30, 40, 50)
 n=aTuple[: :-1]
@@ -90,6 +95,13 @@ tuple1 = (11, [22,33], 44, 55)
 tuple1[1][0]=222
 print(tuple1)
 
+#14.Below are the two lists convert it into the dictionary keys 
+
+keys = ['Ten', 'Twenty', 'Thirty']
+values = [10, 20, 30]
+result=dict(zip(keys,values))
+print(result)
+
 
 
 #15.Merge following two Python dictionaries into one dict1
@@ -106,7 +118,40 @@ dict3.update(dict2)
 print(dict3)
 
 
-#16.
+#16.Check if a value 200 exists in a dictionary sampleDict = {'a': 100, 'b': 200, 'c': 300}
+
+sampleDict = {'a': 100, 'b': 200, 'c': 300}
+if (200 in sampleDict.values()):
+    print("200 exist")
+else:
+    print("not exist")
+    
+    
+#17. Rename key city to location in the following dictionary
+#sampleDict = {"name": "Kelly","age":25,"salary": 8000,"city": "New york"}
+
+sampleDict = {"name": "Kelly","age":25,"salary": 8000,"city": "New york"}
+sampleDict['loaction']=sampleDict.pop('city')
+print(sampleDict)
+
+
+
+# 18.Get the key corresponding to the minimum value from the following
+
+sampleDict = {'Physics': 82,'Math': 65,'history': 75}
+sampleDict = {'Physics': 82,'Math': 65,'history': 75}
+print(min(sampleDict, key=sampleDict.get))
+
+
+
+# 20.Given a Python dictionary, Change Bradâ€™s salary to 8500
+#sampleDict = {'emp1': {'name': 'Jhon', 'salary': 7500},'emp2': {'name': 'Emma', 'salary': 8000},'emp3': {'name': 'Brad', 'salary': 6500}}
+
+sampleDict = {'emp1': {'name': 'Jhon', 'salary': 7500},'emp2': {'name': 'Emma', 'salary': 8000},'emp3': {'name': 'Brad', 'salary': 6500}}
+sampleDict['emp3']['salary']=8500
+
+print(sampleDict)
+
 
 
 
